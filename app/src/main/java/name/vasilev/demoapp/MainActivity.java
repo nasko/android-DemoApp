@@ -4,12 +4,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    public void clickFunction(View view) {
-        Log.i("Info", "Button pressed!");
-
+    public void switchImages(View view) {
+        ImageView img = (ImageView) findViewById(R.id.catImageView);
+        img.setImageResource(R.drawable.cat2);
     }
 
     @Override
